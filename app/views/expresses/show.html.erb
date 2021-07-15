@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @express.full_name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @express.phone %>
+</p>
+
+<p>
+  <strong>Package size:</strong>
+  <%= @express.package_size %>
+</p>
+
+<p>
+  <strong>Pickup address:</strong>
+  <%= @express.pickup_address %>
+</p>
+
+<p>
+  <strong>Delivery address:</strong>
+  <%= @express.delivery_address %>
+</p>
+
+<%= link_to 'Edit', edit_express_path(@express) %> |
+<%= link_to 'Back', expresses_path %>
