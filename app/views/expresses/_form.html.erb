@@ -1,3 +1,5 @@
+
+
 <%= form_with(model: express) do |form| %>
   <% if express.errors.any? %>
     <div id="error_explanation">
@@ -11,32 +13,35 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :full_name %>
-    <%= form.text_field :full_name %>
-  </div>
+  <div >
 
-  <div class="field">
-    <%= form.text_field :phone, placeholder:'08012345678' %>
+    <%= form.text_field :full_name, placeholder:'Description', class:"field form-control" %>
   </div>
-
-  <div class="field">
-    <%= form.text_field :package_size, placeholder:'Package size in kg'  %>
+ <hr class="my-4">
+  <div>
+    <%= form.text_field :phone, placeholder:'0801-2345-678', class:"form-control" %>
   </div>
-
-  <div class="field">
-    <%= form.text_area :pickup_address, placeholder:'Pickup Address' %>
+ <hr class="my-4">
+  <div>
+    <%= form.text_field :package_size, placeholder:'Package size in kg', class:"form-control"  %>
   </div>
-
-  <div class="field">
-    <%= form.text_area :delivery_address, placeholder:'Delivery Address' %>
+ <hr class="my-4">
+  <div>
+    <%= form.text_area :pickup_address, placeholder:'Pickup Address', class:"form-control" %>
   </div>
-
-  <div class="field">
- <%= form.datetime_select :time_stamp %>
+ <hr class="my-4">
+  <div>
+    <%= form.text_area :delivery_address, placeholder:'Delivery Address', class:"form-control" %>
   </div>
+ <hr class="my-4">
+  <div>
+ <%= form.datetime_select :time_stamp, class:"form-select" %>
+  </div>
+<hr class="my-4">
 
   <div class="actions">
-    <%= form.submit class:"btn btn-dark"%>
+    <%= form.submit class:"btn btn-dark btn-lg"%>
+
   </div>
+  <hr class="my-4">
 <% end %>

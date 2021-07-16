@@ -25,7 +25,7 @@ class ExpressesController < ApplicationController
 
     respond_to do |format|
       if @express.save
-        format.html { redirect_to @express, notice: "Express was successfully created." }
+        format.html { redirect_to @express, notice: "Pick up Request successful." }
         format.json { render :show, status: :created, location: @express }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ExpressesController < ApplicationController
   def update
     respond_to do |format|
       if @express.update(express_params)
-        format.html { redirect_to @express, notice: "Express was successfully updated." }
+        format.html { redirect_to @express, notice: "successful...." }
         format.json { render :show, status: :ok, location: @express }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class ExpressesController < ApplicationController
   def destroy
     @express.destroy
     respond_to do |format|
-      format.html { redirect_to expresses_url, notice: "Express was successfully destroyed." }
+      format.html { redirect_to expresses_url, notice: "Order Terminated... " }
       format.json { head :no_content }
     end
   end
@@ -64,6 +64,6 @@ class ExpressesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def express_params
-      params.require(:express).permit(:full_name, :phone, :package_size, :pickup_address, :delivery_address)
+      params.require(:express).permit(:full_name, :phone, :package_size, :pickup_address, :delivery_address, :time_stamp)
     end
 end

@@ -1,8 +1,10 @@
-<div class="p-3 mb-2 bg-dark text-white">
-	<h1>Request Express Pickup</h1>
+<div></div><br>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Request Express Pickup</h1>
+     <hr class="my-4">
+    <p class="lead"><%= render 'form', express: @express %>
 
-<%= render 'form', express: @express %>
-
-<%= link_to 'Back', expresses_path %>
-
+<%= link_to 'Back', expresses_path, class:"btn btn-dark btn-lg" %></p>
+  </div>
 </div>

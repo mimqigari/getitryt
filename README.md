@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My Name is Mubarak Ibrahim Maigari.
 
-Things you may want to cover:
+----------------------------------------------------------
 
-* Ruby version
+* This is a test prject for Get it Ryt Logistics Abuja.
 
-* System dependencies
+* Megaright Resources 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Bauchi, Nigeria
 
 * ...
